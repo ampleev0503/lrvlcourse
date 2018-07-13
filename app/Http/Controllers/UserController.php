@@ -13,11 +13,11 @@ class UserController extends Controller
 
     public function getForm()
     {
-        return view('form', ['method' => 'get']);
+        return view('getForm');
     }
 
     public function postForm()
     {
-        return view('form', ['method' => 'post']);
+        return view('postForm');
     }
 }

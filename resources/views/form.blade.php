@@ -4,5 +4,5 @@
         <p><input type="submit"></p>
     </form>
 @else
-    {{'Форма принята'}}
+    <p>Форма принята</p>
 @endif

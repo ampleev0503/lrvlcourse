@@ -11,12 +11,13 @@ class UserController extends Controller
         return view('user', ['num' => $num]);
     }
 
-    public function form(Request $request)
+    public function getForm()
     {
-        if($request->isMethod('post'))
-            echo "форма принята";
+        return view('form', ['method' => 'get']);
+    }
 
-        if($request->isMethod('get'))
-            return view('form');
+    public function postForm()
+    {
+        return view('form', ['method' => 'post']);
     }
 }

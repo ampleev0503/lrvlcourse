@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Route::get('id{num?}', 'UserController@index')->where('num', '[0-9]+');
 
-Route::match(['get', 'post'],'form', 'UserController@form');
+Route::get('form','UserController@getForm');
+
+Route::post('form','UserController@postForm');
